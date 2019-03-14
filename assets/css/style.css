@@ -113,6 +113,11 @@ label.myLabel input[type="file"] {
     border: solid #f7b633;
 }
 
+#image{
+    width: 100%;
+    height: auto;
+}
+
 /*** history styling ***/
 .historyBtn {
     border: solid #f7b633;

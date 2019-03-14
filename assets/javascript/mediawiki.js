@@ -19,7 +19,12 @@ function callWikiAPI (){
 
         
         // Enters code for populating page on screen
-        $("#info").text(extract);
+        $("#info").empty();
+        if (extract){
+            $("#info").text(extract);
+
+        } else {
+            $("#info").text("Sorry, no entry has been found on Wikipedia.");
         
         //Save user History to localStorage
         var history = JSON.parse(localStorage.getItem("history"));
